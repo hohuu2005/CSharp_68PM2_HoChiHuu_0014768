@@ -1,6 +1,6 @@
 ﻿namespace quanlisinhvien
 {
-    partial class Form1
+    partial class frmDangNhap
     {
         /// <summary>
         /// Required designer variable.
@@ -89,7 +89,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Quản lí sinh viên";
             this.ResumeLayout(false);
             this.PerformLayout();
 

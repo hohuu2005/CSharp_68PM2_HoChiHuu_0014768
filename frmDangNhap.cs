@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace quanlisinhvien
 {
-    public partial class Form1 : Form
+    public partial class frmDangNhap : Form
     {
-        public Form1()
+        public frmDangNhap()
         {
             InitializeComponent();
         }
@@ -24,13 +24,16 @@ namespace quanlisinhvien
             string matKhauNhap = txtMatKhau.Text;
 
             // Thay thế đoạn chữ trong ngoặc kép bằng Email sinh viên và MSSV thật của bạn
-            string emailSinhVien = "0014768@st.huce.edu.vn";
+            string emailSinhVien = "0014768";
             string mssvThiet = "123456";
 
             // Kiểm tra điều kiện
             if (emailNhap == emailSinhVien && matKhauNhap == mssvThiet)
             {
                 MessageBox.Show("Đăng nhập thành công");
+                frmMain main = new frmMain();
+                main.Show();
+                this.Hide();
             }
             else
             {
